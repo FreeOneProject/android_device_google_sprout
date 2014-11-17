@@ -59,6 +59,11 @@ PRODUCT_COPY_FILES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
 	
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -98,7 +103,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     setup_fs \
-    e2fsck
+    e2fsck \
 	
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
