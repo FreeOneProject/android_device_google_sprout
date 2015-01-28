@@ -32,6 +32,9 @@ TARGET_USES_LOGD := false
 # jemalloc causes a lot of random crash on free()
 MALLOC_IMPL := dlmalloc
 
+# Don't generate block mode update zips
+BLOCK_BASED_OTA := false
+
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
 
 TARGET_KERNEL_SOURCE := kernel/google/sprout
