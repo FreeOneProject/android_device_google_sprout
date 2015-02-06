@@ -26,9 +26,6 @@ DEVICE_RESOLUTION := 480x854
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/sprout/bluetooth
 
-# Disable LOGD
-TARGET_USES_LOGD := false
-
 # jemalloc causes a lot of random crash on free()
 MALLOC_IMPL := dlmalloc
 
